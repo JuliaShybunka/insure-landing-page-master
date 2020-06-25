@@ -26,11 +26,21 @@ a {
 .btn-b {
     border: 2px solid #959597;
     color: #959597;
+    &:hover {
+        background-color: #2b282f;
+        color: #fff !important;
+        border-color: #2b282f;
+    }
 }
 
 .btn-w {
     border: 2px solid #fff;
     color: #fff;
+    &:hover {
+        background-color: #fff;
+        color: #2b282f !important;
+        border-color: #fff;
+    }
 }
 
 // font-family: 'DM Serif Display', serif;

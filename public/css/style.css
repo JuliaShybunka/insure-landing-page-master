@@ -367,10 +367,20 @@ a {
   border: 2px solid #959597;
   color: #959597;
 }
+.btn-b:hover {
+  background-color: #2b282f;
+  color: #fff !important;
+  border-color: #2b282f;
+}
 
 .btn-w {
   border: 2px solid #fff;
   color: #fff;
+}
+.btn-w:hover {
+  background-color: #fff;
+  color: #2b282f !important;
+  border-color: #fff;
 }
 
 .header {
@@ -398,6 +408,6 @@ a {
   font-size: 0.9rem;
   letter-spacing: 1px;
 }
-.nav-menu__item.btn a {
-  color: #2B272F;
+.nav-menu__item a:hover {
+  color: #2b282f;
 }
