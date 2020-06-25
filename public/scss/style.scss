@@ -1,9 +1,5 @@
 @import 'normalize.scss';
 @import 'global.scss';
-.header {
-    padding: 35px 0;
-}
-
 .nav {
     display: flex;
     justify-content: space-between;
@@ -32,10 +28,61 @@
 }
 
 .header-content {
-    &__col {}
-    &__title {}
-    &__text {}
-    &__btn {}
+    max-height: 600px;
+    background-color: #2c2640;
+    padding: 107px 0 127px;
+    position: relative;
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+    }
+    &::before {
+        top: 0;
+        right: 0;
+        height: 593px;
+        width: 440px;
+        background: no-repeat url(../images/bg-pattern-intro-right-desktop.svg);
+    }
+    &::after {
+        height: 504px;
+        width: 195px;
+        background: no-repeat url(../images/bg-pattern-intro-left-desktop.svg);
+        left: 0;
+        bottom: -340px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__col {
+        max-width: 541px;
+        color: #fff;
+    }
+    &__title {
+        font-family: 'DM Serif Display', serif;
+        padding: 65px 0 13px;
+        font-size: 4.5rem;
+        line-height: 4rem;
+        font-weight: 400;
+        margin: 0;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 152px;
+            height: 1px;
+            background-color: #fff;
+            top: 0;
+            left: 0;
+        }
+    }
+    &__text {
+        line-height: 1.5rem;
+    }
+    &__btn {
+        margin-top: 22px;
+    }
 }
 
 .btn-w {}
