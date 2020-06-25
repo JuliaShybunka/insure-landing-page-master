@@ -1,0 +1,83 @@
+@import 'normalize.scss';
+@import 'global.scss';
+.header {
+    padding: 35px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {}
+}
+
+.nav-menu {
+    display: flex;
+    min-width: 485px;
+    justify-content: space-between;
+    align-items: center;
+    &__item {
+        list-style: none;
+        a {
+            display: block;
+            text-decoration: none;
+            color: #9a989d;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+        &.btn {
+            a {
+                color: #2B272F;
+            }
+        }
+    }
+}
+
+.header-content {
+    &__col {}
+    &__title {}
+    &__text {}
+    &__btn {}
+}
+
+.btn-w {}
+
+.content {}
+
+.content-title {}
+
+.content-row {}
+
+.content-item {
+    &__icon {}
+    &__title {}
+    &__text {}
+}
+
+.about {
+    &__inner {}
+}
+
+.about-title {}
+
+.about-btn {}
+
+.footer {}
+
+.footer-top {
+    &__logo {}
+    &__icon {}
+}
+
+.icon {
+    &__item {}
+}
+
+.footer-bottom {}
+
+.footer-col {
+    &__title {}
+    &__link {}
+}
+
+.attribution {}
