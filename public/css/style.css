@@ -342,6 +342,15 @@ template {
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 body {
   font-weight: 400;
   font-family: "Karla", sans-serif;
@@ -463,4 +472,44 @@ a {
 }
 .header-content__btn {
   margin-top: 22px;
+}
+
+.content {
+  padding: 306px 0 163px;
+}
+
+.content-title {
+  font-family: "DM Serif Display", serif;
+  font-size: 4rem;
+  letter-spacing: 2.2px;
+  padding: 63px 0 70px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.content-title::before {
+  content: "";
+  position: absolute;
+  width: 152px;
+  height: 1px;
+  background-color: #b1a3b4;
+  top: 0;
+  left: 0;
+}
+
+.content-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-item {
+  max-width: 355px;
+}
+.content-item__title {
+  font-family: "DM Serif Display", serif;
+  font-size: 1.6rem;
+  margin-top: 33px;
+}
+.content-item__text {
+  line-height: 1.5rem;
+  margin-top: 21px;
 }
