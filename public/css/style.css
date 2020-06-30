@@ -415,6 +415,7 @@ a {
 }
 .nav-menu__item a:hover {
   color: #2b282f;
+  font-weight: 700;
 }
 
 .header-content {
@@ -571,6 +572,10 @@ a {
   padding-bottom: 26px;
   border-bottom: 1px solid #d9d9d9;
 }
+.footer-top__logo {
+  position: relative;
+  z-index: 1;
+}
 
 .icon__item {
   margin-left: 13px;
@@ -604,4 +609,59 @@ a {
 }
 .footer-col__link:hover {
   text-decoration: underline;
+}
+
+.icon:hover {
+  fill: #000 !important;
+}
+
+@media (min-width: 650px) {
+  .container {
+    max-width: 378px;
+  }
+
+  .header-content__inner {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .header-content__col {
+    text-align: center;
+  }
+  .header-content__col img {
+    height: 456px;
+  }
+
+  .header-content {
+    padding: 0;
+    max-height: inherit;
+    padding-bottom: 96px;
+  }
+  .header-content__title::before {
+    display: none;
+  }
+  .header-content::before {
+    background: no-repeat url(../images/bg-pattern-intro-right-mobile.svg);
+    right: 0;
+    bottom: -189px;
+    width: 130px;
+    height: 350px;
+    top: unset;
+  }
+  .header-content::after {
+    background: no-repeat url(../images/bg-pattern-intro-left-mobile.svg);
+    width: 170px;
+    height: 166px;
+    top: 0;
+  }
+
+  .header-content__title {
+    font-size: 2.9rem;
+    line-height: 3rem;
+    padding: 92px 15px 0;
+  }
+
+  .header-content__text {
+    padding: 0 28px;
+  }
 }
