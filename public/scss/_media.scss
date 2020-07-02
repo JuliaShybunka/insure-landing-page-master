@@ -82,4 +82,32 @@
         top: unset;
         bottom: 49px;
     }
+    .footer {
+        height: auto;
+        margin-top: 136px;
+        padding: 91px 0;
+    }
+    .footer-top__logo {
+        margin-bottom: 32px;
+    }
+    .footer::before {
+        background: no-repeat url(../images/bg-pattern-footer-mobile.svg);
+    }
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 33px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 0px;
+    }
+    .footer-col {
+        padding-top: 38px;
+    }
+    .footer-col__title {
+        padding-bottom: 33px;
+    }
 }
