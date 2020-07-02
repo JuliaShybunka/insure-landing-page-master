@@ -615,7 +615,7 @@ a {
   fill: #000 !important;
 }
 
-@media (min-width: 650px) {
+@media (max-width: 650px) {
   .container {
     max-width: 378px;
   }
@@ -663,5 +663,28 @@ a {
 
   .header-content__text {
     padding: 0 28px;
+  }
+
+  .content {
+    padding: 137px 0 78px;
+    text-align: center;
+  }
+
+  .content-title {
+    font-size: 2.7rem;
+    padding: 41px 0 60px;
+  }
+  .content-title::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .content-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-item {
+    margin-bottom: 47px;
   }
 }
