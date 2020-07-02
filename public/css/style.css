@@ -687,4 +687,27 @@ a {
   .content-item {
     margin-bottom: 47px;
   }
+
+  .about__inner {
+    height: 344px;
+    max-width: 327px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 74px 28px;
+  }
+  .about__inner::before {
+    background: no-repeat url(../images/bg-pattern-how-we-work-mobile.svg);
+    right: 0;
+    width: 175px;
+    height: 317px;
+  }
+
+  .about-title {
+    font-size: 2.1rem;
+  }
+
+  .about-btn {
+    top: unset;
+    bottom: 49px;
+  }
 }
