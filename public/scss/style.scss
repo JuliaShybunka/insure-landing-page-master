@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    &__logo {}
+    padding: 0 10px;
 }
 
 .nav-menu {
@@ -59,6 +59,7 @@
     &__col {
         max-width: 541px;
         color: #fff;
+        padding-left: 10px;
     }
     &__title {
         font-family: 'DM Serif Display', serif;
@@ -87,7 +88,7 @@
 }
 
 .content {
-    padding: 306px 0 148px;
+    padding: 306px 10px 148px;
 }
 
 .content-title {
@@ -165,7 +166,7 @@
     margin-top: 153px;
     background-color: #fafafa;
     position: relative;
-    padding: 61px 0;
+    padding: 61px 10px;
     &::before {
         content: "";
         position: absolute;
@@ -228,6 +229,10 @@
 
 .icon:hover {
     fill: #000 !important;
+}
+
+.trigger {
+    display: none;
 }
 
 @import 'media.scss';
